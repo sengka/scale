@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  demographic_data: MyText
+  response_data: MyText
+  survey: one
+  is_anonymous: false
+
+two:
+  demographic_data: MyText
+  response_data: MyText
+  survey: two
+  is_anonymous: false
