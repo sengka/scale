@@ -1,5 +1,4 @@
 class User < ApplicationRecord
-class User < ApplicationRecord
   has_many :scales
   has_many :surveys
   has_many :analyses
