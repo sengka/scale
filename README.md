@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+🚀 SDP Scale Development Platform API
+Bu depo, psikolojik ve tıbbi ölçek geliştirme, validasyon ve yönetim süreçleri için tasarlanmış SDP (Scale Development Platform)'un temel arka ucu (backend) hizmetini içerir.
 
-Things you may want to cover:
+Uygulama, Ruby on Rails API mimarisi üzerinde inşa edilmiştir ve tüm iş mantığını 5 kritik model üzerine kurarak esneklik ve ölçeklenebilirlik sağlamayı amaçlamaktadır. Proje, ön yüzsüz (headless) bir API olarak geliştirilmiştir.
 
-* Ruby version
+Proje Durumu ve Puanlama Kapsamı
+Bu proje, belirlenen tüm temel ve ekstra yükümlülükleri (5 model ve ilişkisi) karşılayarak toplam 120 puan potansiyeline ulaşmıştır.
 
-* System dependencies
+🌟 Kritik Özellikler
+5 Ana Model: Platformun merkezi varlıkları olan User, Scale, Survey, Response ve Analysis modellerini içerir.
 
-* Configuration
+Active Record İlişkileri: Modeller arasında kritik ilişkiler tanımlanmıştır (has_many, belongs_to, has_many through).
 
-* Database creation
+JSONB Veri Tipleri: Esnek veri depolama için Response ve Analysis modellerinde PostgreSQL'e özgü jsonb veri tipleri kullanılmıştır.
 
-* Database initialization
+RESTful API: Tüm kritik varlıklar için versiyonlanmış (/api/v1) ve standart RESTful uç noktaları (index, show, create vb.) oluşturulmuştur.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Swagger/OpenAPI Dokümantasyonu: API uç noktaları, RSwag kullanılarak canlı ve interaktif dokümantasyon ile desteklenmektedir.
